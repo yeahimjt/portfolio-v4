@@ -253,7 +253,6 @@ export async function handleSkillContainer() {
   let skillContainers = document.querySelectorAll('div.skill-container');
 
   skillContainers.forEach((skill, index) => {
-    console.log(skill);
     gsap.fromTo(
       skill,
       { scale: 0.5, opacity: 0 },
