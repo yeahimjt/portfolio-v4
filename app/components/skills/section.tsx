@@ -32,7 +32,7 @@ const SkillsSection = () => {
           <div className='opacity-100 transition-opacity group-hover:opacity-0'>
             <ReactIcon />
           </div>
-          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-0 dark:text-dark-title'>
+          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-100 dark:text-dark-title'>
             react
           </p>
         </div>
@@ -40,7 +40,7 @@ const SkillsSection = () => {
           <div className='opacity-100 transition-opacity group-hover:opacity-0'>
             <TailwindIcon />
           </div>
-          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-0 dark:text-dark-title'>
+          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-100 dark:text-dark-title'>
             tailwind
           </p>
         </div>
@@ -48,7 +48,7 @@ const SkillsSection = () => {
           <div className='opacity-100 transition-opacity group-hover:opacity-0'>
             <NextIcon />
           </div>
-          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-0 dark:text-dark-title'>
+          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-100 dark:text-dark-title'>
             next
           </p>
         </div>
@@ -56,7 +56,7 @@ const SkillsSection = () => {
           <div className='opacity-100 transition-opacity group-hover:opacity-0'>
             <JavaScriptIcon />
           </div>
-          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-0 dark:text-dark-title'>
+          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-100 dark:text-dark-title'>
             javascript
           </p>
         </div>
@@ -64,7 +64,7 @@ const SkillsSection = () => {
           <div className='opacity-100 transition-opacity group-hover:opacity-0'>
             <TypeScriptIcon />
           </div>
-          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-0 dark:text-dark-title'>
+          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-100 dark:text-dark-title'>
             typescript
           </p>
         </div>
@@ -72,7 +72,7 @@ const SkillsSection = () => {
           <div className='opacity-100 transition-opacity group-hover:opacity-0'>
             <FirebaseIcon />
           </div>
-          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-0 dark:text-dark-title'>
+          <p className='group-hover:opacity-10000 absolute bottom-1 right-1 text-light-title opacity-0 dark:text-dark-title'>
             firebase
           </p>
         </div>
@@ -80,7 +80,7 @@ const SkillsSection = () => {
           <div className='opacity-100 transition-opacity group-hover:opacity-0'>
             <ExpressIcon />
           </div>
-          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-0 dark:text-dark-title'>
+          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-100 dark:text-dark-title'>
             express
           </p>
         </div>
@@ -88,7 +88,7 @@ const SkillsSection = () => {
           <div className='opacity-100 transition-opacity group-hover:opacity-0'>
             <AwsIcon />
           </div>
-          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-0 dark:text-dark-title'>
+          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-100 dark:text-dark-title'>
             aws
           </p>
         </div>
@@ -96,7 +96,7 @@ const SkillsSection = () => {
           <div className='opacity-100 transition-opacity group-hover:opacity-0'>
             <AzureIcon />
           </div>
-          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-0 dark:text-dark-title'>
+          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-100 dark:text-dark-title'>
             azure
           </p>
         </div>
@@ -104,7 +104,7 @@ const SkillsSection = () => {
           <div className='opacity-100 transition-opacity group-hover:opacity-0'>
             <MySQLIcon />
           </div>
-          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-0 dark:text-dark-title'>
+          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-100 dark:text-dark-title'>
             mysql
           </p>
         </div>
@@ -112,7 +112,7 @@ const SkillsSection = () => {
           <div className='opacity-100 transition-opacity group-hover:opacity-0'>
             <MongoIcon />
           </div>
-          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-0 dark:text-dark-title'>
+          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-100 dark:text-dark-title'>
             mongo
           </p>
         </div>
@@ -120,7 +120,7 @@ const SkillsSection = () => {
           <div className='opacity-100 transition-opacity group-hover:opacity-0'>
             <JavaIcon />
           </div>
-          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-0 dark:text-dark-title'>
+          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-100 dark:text-dark-title'>
             java
           </p>
         </div>
@@ -128,7 +128,7 @@ const SkillsSection = () => {
           <div className='opacity-100 transition-opacity group-hover:opacity-0'>
             <CIcon />
           </div>
-          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-0 dark:text-dark-title'>
+          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-100 dark:text-dark-title'>
             c
           </p>
         </div>
@@ -136,7 +136,7 @@ const SkillsSection = () => {
           <div className='opacity-100 transition-opacity group-hover:opacity-0'>
             <CSharpIcon />
           </div>
-          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-0 dark:text-dark-title'>
+          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-100 dark:text-dark-title'>
             c#
           </p>
         </div>
@@ -144,7 +144,7 @@ const SkillsSection = () => {
           <div className='opacity-100 transition-opacity group-hover:opacity-0'>
             <PythonIcon />
           </div>
-          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-0 dark:text-dark-title'>
+          <p className='absolute bottom-1 right-1 text-light-title opacity-0 group-hover:opacity-100 dark:text-dark-title'>
             python
           </p>
         </div>
