@@ -44,7 +44,7 @@ interface IconComponentProps {
   name: string;
 }
 
-const IconComponent = ({ name, ...props }: IconComponentProps) => {
+const IconComponent = ({ name }: IconComponentProps) => {
   let Icon = iconTypes[name];
 
   useEffect(() => {
