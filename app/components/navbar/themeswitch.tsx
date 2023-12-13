@@ -19,11 +19,11 @@ const ThemeSwitch = () => {
     <>
       {theme === 'light' ? (
         <button onClick={() => setTheme('dark')}>
-          <Moon />
+          <Moon className='text-light-general' />
         </button>
       ) : (
         <button onClick={() => setTheme('light')}>
-          <Sun />
+          <Sun className='text-yellow-500' />
         </button>
       )}
     </>

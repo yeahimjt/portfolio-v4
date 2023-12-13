@@ -6,6 +6,12 @@ import { ArrowRight, Github, Link, Link2, LinkIcon } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useSplineState } from '@/app/states';
+import {
+  handleImageAnimation,
+  handleProjectDetailsAnimation,
+} from '@/app/animations';
+import { useRouter } from 'next/navigation';
+import Warning from '../warning';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,6 +20,7 @@ interface ProjectSample {
 }
 const ProjectSample = ({ project }: ProjectSample) => {
   const { loaded, setLoaded } = useSplineState((state) => state);
+  const router = useRouter();
   useEffect(() => {
     if (loaded) {
       handleImageAnimation();
@@ -21,49 +28,6 @@ const ProjectSample = ({ project }: ProjectSample) => {
     }
   }, [loaded]);
 
-  function handleImageAnimation() {
-    let element = document.querySelectorAll('img.initial-clip-path-image');
-    gsap.to(element, {
-      clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
-      delay: 1,
-      duration: 1,
-      stagger: 0.5,
-    });
-  }
-  function handleProjectDetailsAnimation() {
-    let projectTitle = document.querySelectorAll('h2.project-title');
-    let projectCategory = document.querySelectorAll('p.project-category');
-
-    gsap.fromTo(
-      projectTitle,
-      {
-        translateY: 40,
-        opacity: 0,
-      },
-      {
-        translateY: 0,
-        opacity: 1,
-        delay: 1,
-        duration: 1,
-        stagger: 0.5,
-      }
-    );
-
-    gsap.fromTo(
-      projectCategory,
-      {
-        translateY: 40,
-        opacity: 0,
-      },
-      {
-        translateY: 0,
-        opacity: 1,
-        delay: 1.3,
-        duration: 1,
-        stagger: 0.5,
-      }
-    );
-  }
   return (
     <section className='col-span-1 space-y-2'>
       <Image
@@ -79,20 +43,32 @@ const ProjectSample = ({ project }: ProjectSample) => {
       </div>
       <section className='flex flex-wrap gap-[6px]'>
         {project.skills.map((skill, index) => (
-          <Skills title={skill} key={index} />
+          <Skills title={skill} key={index} animate={true} />
         ))}
       </section>
-      <section className='text-light-title dark:text-dark-title flex items-center justify-end gap-[10px] pt-[20px]'>
+      <section className='flex items-center justify-end gap-[10px] pt-[20px] text-light-title dark:text-dark-title'>
+        {project.warning && <Warning text={project.warning} animate={true} />}
         {project.live_link && (
-          <a href={project.live_link} className='p-[7px]'>
+          <a
+            target='_blank'
+            rel='noreferrer'
+            href={project.live_link}
+            className='project-live p-[7px]'
+          >
             <Link />
           </a>
         )}
-        <a href={project.github_link} className='p-[7px]'>
+        <a
+          target='_blank'
+          rel='noreferrer'
+          href={project.github_link}
+          className='project-github p-[7px]'
+        >
           <Github />
         </a>
         <button
-          className='text-light-title group flex items-center gap-[10px] rounded-[5px] px-4 py-2'
+          onClick={() => router.push(project.redirect_link)}
+          className='project-redirect group flex items-center gap-[10px] rounded-[5px] px-4 py-2 text-light-title'
           style={{ backgroundColor: project.color }}
         >
           read more{' '}

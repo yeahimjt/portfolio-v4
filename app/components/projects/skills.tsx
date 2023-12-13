@@ -8,12 +8,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 interface Skill {
   title: string;
+  animate: boolean;
 }
 
-const Skills = ({ title }: Skill) => {
+const Skills = ({ title, animate }: Skill) => {
   const { loaded, setLoaded } = useSplineState((state) => state);
   useEffect(() => {
-    if (loaded) {
+    if (loaded && animate) {
       handleSkillAnimation();
     }
   }, [loaded]);
@@ -30,7 +31,12 @@ const Skills = ({ title }: Skill) => {
     );
   }
   return (
-    <span className='bg-light-container project-skill dark:bg-dark-container text-light-general dark:text-dark-general px-4 py-1 text-[12px]'>
+    <span
+      className={`${
+        animate ? 'project-skill' : ''
+      } bg-light-container px-4 py-1 text-[12px] text-light-general dark:bg-dark-container dark:text-dark-general`}
+      id='skills'
+    >
       {title}
     </span>
   );

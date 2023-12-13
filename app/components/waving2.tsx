@@ -9,7 +9,7 @@ import { animateSplineIn } from '../animations';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Waving = () => {
+const Waving2 = () => {
   const { loaded, setLoaded } = useSplineState((state) => state);
   useEffect(() => {
     if (loaded) {
@@ -20,11 +20,11 @@ const Waving = () => {
   return (
     <div className='load-container  h-[100px] w-[100px] rounded-full'>
       <Spline
-        scene='https://prod.spline.design/BKzFEZKjUMhOPsQA/scene.splinecode'
+        scene='https://prod.spline.design/MbgCUz609p2Ir5iK/scene.splinecode'
         onLoad={() => setLoaded(true)}
       />
     </div>
   );
 };
 
-export default Waving;
+export default Waving2;

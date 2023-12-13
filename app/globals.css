@@ -3,36 +3,36 @@
 @tailwind utilities;
 
 body {
-  @apply bg-light-bg dark:bg-dark-bg mx-auto max-w-[1440px];
+  @apply mx-auto max-w-[1440px] bg-light-bg dark:bg-dark-bg;
 }
 
 main,
 nav {
-  @apply mx-[40px];
+  @apply mx-[20px] md:mx-[40px];
 }
 
 h1 {
-  @apply text-light-title dark:text-dark-title text-[20px] font-bold;
+  @apply text-[20px] font-bold text-light-title dark:text-dark-title;
 }
 
 h1.title {
-  @apply text-light-subtitle dark:text-dark-subtitle text-[20px] font-bold opacity-0;
+  @apply text-[20px] font-bold text-light-subtitle opacity-0 dark:text-dark-subtitle;
 }
 
 h2 {
-  @apply text-light-title dark:text-dark-title  text-[16px] font-semibold;
+  @apply text-[16px] font-semibold  text-light-title dark:text-dark-title;
 }
 
 h3 {
-  @apply text-light-general dark:text-dark-general text-[14px] font-light;
+  @apply text-[14px] font-light text-light-general dark:text-dark-general;
 }
 
 p {
-  @apply text-light-general dark:text-dark-general text-[14px];
+  @apply text-[14px] text-light-general dark:text-dark-general;
 }
 
 span.bold {
-  @apply text-light-subtitle dark:text-dark-subtitle text-[14px]  font-bold;
+  @apply text-[14px] font-bold text-light-subtitle  dark:text-dark-subtitle;
 }
 
 .initial-clip-path-image {
@@ -46,7 +46,32 @@ span.bold {
 .project-category {
   @apply opacity-0;
 }
-
 .project-skill {
   @apply scale-0 opacity-0;
+}
+.project-redirect,
+.project-github,
+.project-live,
+.project-warning {
+  @apply opacity-0;
+}
+
+.experience-title,
+.experience-timeframe,
+.experience-company,
+.experience-description {
+  @apply translate-y-10 opacity-0;
+}
+
+.skill-container {
+  @apply scale-50 opacity-0;
+}
+
+.cta-small,
+.cta-big {
+  @apply translate-y-10 scale-0 opacity-0;
+}
+
+.cta-cta {
+  @apply rotate-[135deg] scale-0 opacity-0;
 }

@@ -1,41 +1,20 @@
+'use client';
 import React from 'react';
 import Conditional from './conditional';
 import Link from 'next/link';
 import ThemeSwitch from './themeswitch';
+import MobileNav from './mobile';
 
 const NavBar = () => {
   return (
-    <nav className='flex h-[60px] items-end justify-between border-b pb-2'>
-      <section>
+    <nav className='flex h-[60px] items-end justify-between border-b border-light-container pb-2 dark:border-dark-container'>
+      <section className='flex items-center gap-6'>
         <Conditional />
-        <span className='flex gap-6'>
-          <Link
-            href='/'
-            className='text-light-subtitle  hover:text-light-title dark:text-dark-subtitle dark:hover:text-dark-title'
-          >
-            Projects
-          </Link>
-          <Link
-            href='/'
-            className='text-light-subtitle  hover:text-light-title dark:text-dark-subtitle dark:hover:text-dark-title'
-          >
-            Explore
-          </Link>
-          <Link
-            href='/'
-            className='text-light-subtitle  hover:text-light-title dark:text-dark-subtitle dark:hover:text-dark-title'
-          >
-            Skills
-          </Link>
-          <Link
-            href='/'
-            className='text-light-subtitle  hover:text-light-title dark:text-dark-subtitle dark:hover:text-dark-title'
-          >
-            Contact
-          </Link>
-        </span>
       </section>
-      <ThemeSwitch />
+      <span className='flex gap-6'>
+        <ThemeSwitch />
+        <MobileNav />
+      </span>
     </nav>
   );
 };
