@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import IconComponent from './icon';
 import { skills } from '@/app/constants';
