@@ -1,4 +1,3 @@
-'use client';
 import React from 'react';
 import IconComponent from './icon';
 import { skills } from '@/app/constants';
@@ -11,9 +10,10 @@ const SkillsSection = () => {
     >
       <h1 className='title below-fold'>SKILLS</h1>
       <section className='flex flex-wrap gap-[20px]'>
-        {skills.map((skill: string, index) => (
-          <IconComponent key={index} name={skill} />
-        ))}
+        {typeof window !== 'undefined' &&
+          skills.map((skill: string, index) => (
+            <IconComponent key={index} name={skill} />
+          ))}
       </section>
     </section>
   );

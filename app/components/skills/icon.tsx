@@ -46,9 +46,11 @@ interface IconComponentProps {
 
 const IconComponent = ({ name, ...props }: IconComponentProps) => {
   let Icon = iconTypes[name];
+
   useEffect(() => {
     handleSkillContainer();
   }, []);
+
   return (
     <div className='skill-container group relative bg-light-container dark:bg-dark-container'>
       <div className='opacity-100 transition-opacity group-hover:opacity-0'>
