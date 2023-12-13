@@ -10,10 +10,9 @@ const SkillsSection = () => {
     >
       <h1 className='title below-fold'>SKILLS</h1>
       <section className='flex flex-wrap gap-[20px]'>
-        {typeof window !== 'undefined' &&
-          skills.map((skill: string, index) => (
-            <IconComponent key={index} name={skill} />
-          ))}
+        {skills.map((skill: string, index) => (
+          <IconComponent key={index} name={skill} />
+        ))}
       </section>
     </section>
   );
