@@ -16,7 +16,7 @@ const IconComponent = ({ name }: IconComponentProps) => {
     <div className='skill-container group relative bg-light-container dark:bg-dark-container'>
       <div className='opacity-100 transition-opacity group-hover:opacity-0'>
         <Image
-          src={require(`./icons/${name}.svg`)}
+          src={require(`@/public/icons/${name}.svg`)}
           width={95}
           height={95}
           alt=''
