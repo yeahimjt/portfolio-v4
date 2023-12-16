@@ -72,7 +72,7 @@ const SkillsSection = () => {
           <div className='opacity-100 transition-opacity group-hover:opacity-0'>
             <FirebaseIcon />
           </div>
-          <p className='group-hover:opacity-10000 absolute bottom-1 right-1 text-light-title opacity-0 transition-opacity dark:text-dark-title'>
+          <p className='group-hover:opacity-10000 absolute bottom-1 right-1 text-light-title opacity-0 transition-opacity group-hover:opacity-100 dark:text-dark-title'>
             firebase
           </p>
         </div>
