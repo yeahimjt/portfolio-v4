@@ -58,8 +58,8 @@ const Page = () => {
   }
 
   return (
-    <main className='col-span-6 grid grid-cols-6 gap-[20px]  pt-[80px] '>
-      <div className='col-span-2 space-y-[40px] '>
+    <main className='col-span-6 grid grid-cols-6  gap-[20px]  pt-[80px] '>
+      <div className='col-span-6 space-y-[40px] lg:col-span-2 '>
         <h1>Contact me directly.</h1>
         <span className='flex gap-2'>
           <div className=' relative h-[100px] w-[100px] overflow-hidden rounded-full'>
@@ -118,7 +118,7 @@ const Page = () => {
         </section>
       </div>
       <form
-        className='col-span-4 space-y-[40px] pl-[40px]'
+        className='col-span-6 mt-[40px] space-y-[40px] lg:col-span-4 lg:mt-[0px] lg:pl-[40px]'
         onSubmit={handleSubmit}
       >
         <h1>Send me a message</h1>
