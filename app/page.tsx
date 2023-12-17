@@ -60,7 +60,7 @@ export default function Home() {
         <span className='col-span-4 space-y-4 lg:col-span-2'>
           <p>
             While pursuing my bachelors of computer science, with a minor in
-            cyber security, web development became a rabbit hole I delved into
+            cyber security, web development became a rabbit hole I dove into
             head first.
           </p>
           <p>
