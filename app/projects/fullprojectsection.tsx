@@ -21,11 +21,21 @@ const FullProjectSection = ({ data }: FullProjectSectionProps) => {
           <section className='flex items-center gap-[10px]  text-light-title dark:text-dark-title'>
             {data.warning && <Warning text={data.warning} animate={false} />}
             {data.live_link && (
-              <a href={data.live_link} className='p-[7px]'>
+              <a
+                target='_blank'
+                rel='noreferrer'
+                href={data.live_link}
+                className='p-[7px]'
+              >
                 <Link />
               </a>
             )}
-            <a href={data.github_link} className='p-[7px]'>
+            <a
+              target='_blank'
+              rel='noreferrer'
+              href={data.github_link}
+              className='p-[7px]'
+            >
               <Github />
             </a>
           </section>
