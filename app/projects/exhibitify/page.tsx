@@ -18,7 +18,7 @@ const exhibitify_data = {
 
   image_url: '/image/exhibitify.png',
   github_link: 'https://github.com/yeahimjt/exhibitify',
-  live_link: 'https://exhibitify.vercel.app/explore',
+  live_link: 'https://exhibitify.vercel.app',
   overview: [
     'A problem I found myself constantly being reintroduced with is when editing or creating my web portfolio is that the only resources often found from top google searches are blog posts often containing the same portfolios.',
     'However, this did make me realize something; people can create their own brand from their portfolio. Take Brittany Chiang’s website, there are plenty of portfolios that are recognizable to have taken inspiration from her.',
