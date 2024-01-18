@@ -19,7 +19,7 @@ const ProjectSection = () => {
   }, [loaded]);
 
   return (
-    <section className='col-span-6 lg:col-start-2 lg:col-end-6 mt-[40px] space-y-2' id='projects'>
+    <section className='col-span-6 lg:col-start-2 lg:col-end-6 mt-[40px] space-y-[60px]' id='projects'>
       <h1 className='title above-fold col-span-6'>SELECTED PROJECTS</h1>
       <section className='col-span-1 grid gap-[20px] grid-cols-1'>
         {sampler_projects.map((project, index) => (
