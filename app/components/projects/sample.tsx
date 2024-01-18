@@ -33,7 +33,7 @@ const ProjectSample = ({ project }: ProjectSample) => {
       <Image
         className='initial-clip-path-image w-full'
         src={project.image_url}
-        width={237}
+        width={243}
         height={166}
         alt={project.title}
       />
