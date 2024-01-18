@@ -29,15 +29,18 @@ const ProjectSample = ({ project }: ProjectSample) => {
   }, [loaded]);
 
   return (
-    <section className='col-span-1 space-y-2'>
+    <section className='col-span-1 space-y-2 flex gap-[20px] flex-col md:flex-row'>
       <Image
         className='initial-clip-path-image w-full'
         src={project.image_url}
-        width={437}
-        height={366}
+        width={237}
+        height={166}
         alt={project.title}
       />
-      <div className='space-y-1'>
+      <section className='w-full'>
+
+
+      <div className='space-y-1 pb-4'>
         <h2 className='project-title'>{project.title}</h2>
         <p className='project-category'>{project.category}</p>
       </div>
@@ -46,7 +49,7 @@ const ProjectSample = ({ project }: ProjectSample) => {
           <Skills title={skill} key={index} animate={true} />
         ))}
       </section>
-      <section className='flex items-center justify-end gap-[10px] pt-[20px] text-light-title dark:text-dark-title'>
+      <section className='flex items-center justify-end gap-[10px] pt-[20px] text-light-title dark:text-dark-title w-full'>
         {project.warning && <Warning text={project.warning} animate={true} />}
         {project.live_link && (
           <a
@@ -77,6 +80,7 @@ const ProjectSample = ({ project }: ProjectSample) => {
             size={18}
           />
         </button>
+        </section>
       </section>
     </section>
   );
