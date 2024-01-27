@@ -26,14 +26,13 @@ const ProjectSample = ({ project }: ProjectSample) => {
       handleImageAnimation();
       handleProjectDetailsAnimation();
     }
-  }, [loaded]);
-
+  }, [loaded])
   return (
     <section className='col-span-1 space-y-2 flex gap-[20px] flex-col md:flex-row'>
       <Image
-        className='initial-clip-path-image w-full'
+        className='initial-clip-path-image w-full md:w-auto'
         src={project.image_url}
-        width={243}
+        width={343}
         height={166}
         alt={project.title}
       />
