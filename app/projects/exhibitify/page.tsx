@@ -1,6 +1,7 @@
 import React from 'react';
 import FullProjectSection from '../fullprojectsection';
 import ExploreMore from '../exploremore';
+import NavBar from '@/app/components/navbar/navbar';
 
 const exhibitify_data = {
   title: 'Exhibitify',
@@ -41,13 +42,16 @@ const exhibitify_data = {
 
 const page = () => {
   return (
-    <main className='mt-[80px] grid grid-cols-6'>
-      <FullProjectSection data={exhibitify_data} />
-      <ExploreMore
-        previous={exhibitify_data.last}
-        next={exhibitify_data.next}
-      />
-    </main>
+    <>
+      <NavBar />
+      <main className='mt-[80px] grid grid-cols-6'>
+        <FullProjectSection data={exhibitify_data} />
+        <ExploreMore
+          previous={exhibitify_data.last}
+          next={exhibitify_data.next}
+        />
+      </main>
+    </>
   );
 };
 

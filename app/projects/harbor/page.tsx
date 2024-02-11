@@ -1,6 +1,7 @@
 import React from 'react';
 import FullProjectSection from '../fullprojectsection';
 import ExploreMore from '../exploremore';
+import NavBar from '@/app/components/navbar/navbar';
 
 const harbor_data = {
   title: 'Harbor',
@@ -43,10 +44,13 @@ const harbor_data = {
 
 const page = () => {
   return (
-    <main className='mt-[80px] grid grid-cols-6'>
-      <FullProjectSection data={harbor_data} />
-      <ExploreMore previous={harbor_data.last} next={harbor_data.next} />
-    </main>
+    <>
+      <NavBar />
+      <main className='mt-[80px] grid grid-cols-6'>
+        <FullProjectSection data={harbor_data} />
+        <ExploreMore previous={harbor_data.last} next={harbor_data.next} />
+      </main>
+    </>
   );
 };
 

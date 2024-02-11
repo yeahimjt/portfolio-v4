@@ -1,6 +1,7 @@
 import React from 'react';
 import FullProjectSection from '../fullprojectsection';
 import ExploreMore from '../exploremore';
+import NavBar from '@/app/components/navbar/navbar';
 
 const clinkz_data = {
   title: 'Clinkz',
@@ -43,10 +44,13 @@ const clinkz_data = {
 
 const page = () => {
   return (
-    <main className='mt-[80px] grid grid-cols-6'>
-      <FullProjectSection data={clinkz_data} />
-      <ExploreMore previous={clinkz_data.last} next={clinkz_data.next} />
-    </main>
+    <>
+      <NavBar />
+      <main className='mt-[80px] grid grid-cols-6'>
+        <FullProjectSection data={clinkz_data} />
+        <ExploreMore previous={clinkz_data.last} next={clinkz_data.next} />
+      </main>
+    </>
   );
 };
 

@@ -27,6 +27,7 @@ const config: Config = {
         'dark-container': '#333333',
       },
       screens: {
+        follow: '1540px',
         max: '1440px',
       },
     },
