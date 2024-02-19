@@ -21,7 +21,8 @@ const Follow = () => {
   const [open, setOpen] = useState<boolean>(false);
   const [animating, setAnimating] = useState<boolean>(false);
   const { theme } = useTheme();
-  const path = window.location.pathname;
+  const [path, setPath] = useState<string>('');
+
   console.log(path);
 
   const [width, setWidth] = useState(window.innerWidth);
@@ -39,6 +40,7 @@ const Follow = () => {
     // mounted, check if screen size is appropriate
     handleResize();
     window.addEventListener('resize', handleResize);
+    setPath(window.location.pathname);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
   useEffect(() => {

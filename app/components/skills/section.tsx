@@ -23,7 +23,7 @@ const SkillsSection = () => {
   }, []);
   return (
     <section
-      className='col-span-6 space-y-[40px]  pt-[80px] lg:col-start-2 lg:col-end-6'
+      className='col-span-6 space-y-[40px]  pt-[140px] lg:col-start-2 lg:col-end-6'
       id='skill'
     >
       <h1 className='title below-fold'>SKILLS</h1>
