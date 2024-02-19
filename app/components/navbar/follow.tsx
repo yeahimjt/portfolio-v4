@@ -25,7 +25,7 @@ const Follow = () => {
 
   console.log(path);
 
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState<null | number>(null);
   useEffect(() => {
     const handleResize = () => {
       setWidth(window.innerWidth);
@@ -45,7 +45,7 @@ const Follow = () => {
   }, []);
   useEffect(() => {
     if (open) {
-      if (width > 1540) {
+      if (width && width > 1540) {
         console.log('inside ');
         gsap.to('.nav-content', {
           visibility: 'visible',
@@ -101,7 +101,7 @@ const Follow = () => {
     const navContent = document.querySelector('.nav-content');
     const navButton = document.querySelector('.nav-button');
     setAnimating(true);
-    if (width > 1540) {
+    if (width && width > 1540) {
       gsap.to('.nav-content', {
         visibility: 'visible',
         delay: 0.5,
