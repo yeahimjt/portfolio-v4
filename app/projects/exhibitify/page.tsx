@@ -26,7 +26,7 @@ const exhibitify_data = {
     'From this, I took it upon myself to create a platform where users can create a brand from their portfolios uploaded on the platform, and ultimately would also serve as a place for users who need inspiration for their portfolios to see real-working diverse examples.',
   ],
   features: [
-    'Exhbitify utilizes Firebase for its authentication, database for data, and storage for storing images of the of the users portfolio website for their post. ',
+    'Exhibitify utilizes Firebase for its authentication, database for data, and storage for storing images of the of the users portfolio website for their post. ',
     'Users can upload, or edit their posts and using Puppeteer can validate their URL so that a screenshot is taken of their portfolio at the given URL and stored so they can avoid having to manually take and upload a picture of their portfolio.',
     'Infinite scrolling for exploring posts also allows users to receive a shortened amount of posts at a time.',
     'Another important feature that was implemented for Harbor was cookie-based impressions. If a user (logged in or not) happened to visit a post for their first time that would count as one impression, if at anytime before that day ends they revisit the post it will not count as an impression. This helps users get a accurate number for their impressions on their posts.',

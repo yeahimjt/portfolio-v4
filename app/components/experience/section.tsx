@@ -16,7 +16,7 @@ const ExperienceSection = () => {
 
   return (
     <section
-      className='col-span-6 mt-[80px] space-y-[60px] lg:col-start-2 lg:col-end-6'
+      className='col-span-6 mt-[140px] space-y-[60px] lg:col-start-2 lg:col-end-6'
       id='experience'
     >
       <h1 className='title below-fold'>EXPERIENCE</h1>

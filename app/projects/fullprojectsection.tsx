@@ -4,6 +4,8 @@ import { skills } from '../constants';
 import Skills from '../components/projects/skills';
 import Image from 'next/image';
 import Warning from '../components/warning';
+import Follow from '../components/navbar/follow';
+import NavBar from '../components/navbar/navbar';
 
 interface FullProjectSectionProps {
   data: ProjectFull;
@@ -12,7 +14,10 @@ interface FullProjectSectionProps {
 const FullProjectSection = ({ data }: FullProjectSectionProps) => {
   return (
     <div className='col-span-6 grid grid-cols-6 gap-[20px]'>
-      <section className='col-span-6 space-y-2  lg:col-span-3'>
+      <section className='col-span-6 lg:col-start-2 lg:col-end-6'>
+        <Image src={data.image_url} width={800} height={800} alt='' />
+      </section>
+      <section className='col-span-6 space-y-2 lg:col-start-2  lg:col-end-6'>
         <span className='flex items-start justify-between'>
           <section>
             <h2 className='title'>{data.title}</h2>
@@ -67,10 +72,6 @@ const FullProjectSection = ({ data }: FullProjectSectionProps) => {
             <p>{data.results}</p>
           </div>
         </section>
-      </section>
-
-      <section className='col-span-6 lg:col-span-3'>
-        <Image src={data.image_url} width={800} height={800} alt='' />
       </section>
     </div>
   );

@@ -12,7 +12,7 @@ import NavBar from './components/navbar/navbar';
 export default function Home() {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <main className='grid-[20px] mt-[80px] grid  grid-cols-4 lg:grid-cols-6'>
         <Follow />
         <header className='col-span-4 grid w-full grid-cols-4 gap-[20px] lg:col-start-2'>
