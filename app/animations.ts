@@ -133,21 +133,24 @@ export function handleProjectDetailsAnimation() {
 // Handle ALL project titles
 export function handleTitleBelowAnimation() {
   let element = document.querySelectorAll('h1.below-fold');
-  gsap.fromTo(
-    element,
-    {
-      translateX: '-40px',
-      opacity: 0,
-    },
-    {
-      translateX: 0,
-      opacity: 1,
-      duration: 1,
-      delay: 1,
-      scrollTrigger: {
-        trigger: element,
+  element.forEach((el) =>
+    gsap.fromTo(
+      el,
+      {
+        translateX: '-40px',
+        opacity: 0,
       },
-    }
+      {
+        translateX: 0,
+        opacity: 1,
+        duration: 1,
+        delay: 1,
+        scrollTrigger: {
+          trigger: el,
+          markers: true,
+        },
+      }
+    )
   );
 }
 
