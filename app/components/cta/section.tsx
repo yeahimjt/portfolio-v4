@@ -59,7 +59,7 @@ const CtaSection = () => {
   return (
     <section
       className='col-span-6 space-y-[40px]  pb-[80px] pt-[140px] lg:col-start-2 lg:col-end-6'
-      id='skill'
+      id='contact'
     >
       <h1 className='title below-fold'>CONTACT</h1>
       <form

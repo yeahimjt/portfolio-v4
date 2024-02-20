@@ -68,14 +68,14 @@ export const sampler_experience: ExperienceList = [
     timeframe: 'May 2023 - Jun 2023',
     company: 'Glass Realty',
     description:
-      'Designed and developed a web application for fostering mutual benefits for consumers and realtors.',
+      'Designed and developed a web application for realtors with monetization features, enabling users to generate revenue through their property listing impressions.',
   },
   {
     title: 'Front End Developer Certification - Meta',
     timeframe: 'Jan 2023 - Feb 2023',
     company: 'Coursera',
     description:
-      "Acquired vital front-end web development skills through this comprehensive course, covering React, HTML, CSS, JavaScript, responsive design, UI development, and web accessibility. Guided by industry experts, I've stayed current with industry best practices.",
+      "Acquired vital front-end web development skills through this comprehensive course, covering React, HTML, CSS, JavaScript, responsive design, UI development, and web accessibility. Guided by industry experts, I've stayed current with the best practices in the industry.",
   },
   {
     title: 'Bachelors in Computer Science',

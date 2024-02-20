@@ -15,7 +15,7 @@ const FullProjectSection = ({ data }: FullProjectSectionProps) => {
   return (
     <div className='col-span-6 grid grid-cols-6 gap-[20px]'>
       <section className='col-span-6 lg:col-start-2 lg:col-end-6'>
-        <Image src={data.image_url} width={800} height={800} alt='' />
+        <Image src={data.image_url} width={900} height={900} alt='' />
       </section>
       <section className='col-span-6 space-y-2 lg:col-start-2  lg:col-end-6'>
         <span className='flex items-start justify-between'>
