@@ -147,7 +147,6 @@ export function handleTitleBelowAnimation() {
         delay: 1,
         scrollTrigger: {
           trigger: el,
-          markers: true,
         },
       }
     )
