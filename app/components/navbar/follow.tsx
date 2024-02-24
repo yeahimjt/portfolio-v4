@@ -151,14 +151,14 @@ const Follow = () => {
     sections.forEach((section) => {
       if (section !== to) {
         gsap.to(`.${section}`, {
-          color: theme === 'light' ? '#999999' : '#AAAAAA',
+          color: theme === 'light' ? '#666666' : '#AAAAAA',
           duration: 0.1,
           scale: '1.00',
           ease: 'power2.out',
         });
       } else {
         gsap.to(`.${section}`, {
-          color: theme === 'light' ? '#666666' : '#DDDDDD',
+          color: '#666666',
           scale: '1.10',
           duration: 0.1,
           ease: 'power2.out',
