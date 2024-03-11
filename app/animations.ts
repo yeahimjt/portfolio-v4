@@ -13,16 +13,23 @@ export function animateSplineIn() {
     {
       opacity: 0,
       scale: 0.7,
-      translateX: '200px',
+      translateX: '50px',
     },
     {
       scale: 1,
       opacity: 1,
-      duration: 0.5,
+      duration: 0.2,
       delay: 0.5,
       translateX: '0px',
     }
   );
+
+  // let splineBg = document.querySelector('.spline-backdrop');
+  // gsap.fromTo(
+  //   splineBg,
+  //   { scale: 0, opacity: 0 },
+  //   { scale: 1, opacity: 1, duration: 0.2, delay: 2 }
+  // );
 }
 
 // Title animation for SELECTED PROJECTS
@@ -143,8 +150,8 @@ export function handleTitleBelowAnimation() {
       {
         translateX: 0,
         opacity: 1,
-        duration: 1,
-        delay: 1,
+        duration: 0.5,
+        delay: 0.5,
         scrollTrigger: {
           trigger: el,
         },
@@ -257,10 +264,12 @@ export async function handleSkillContainer() {
   skillContainers.forEach((skill, index) => {
     gsap.fromTo(
       skill,
-      { scale: 0.5, opacity: 0 },
+      { scale: 0.5, opacity: 0, skewX: 10, skewY: 5 },
       {
         scale: 1,
+        skewY: 0,
         opacity: 1,
+        skewX: 0,
         delay: `${index / skills.length}`,
         scrollTrigger: {
           trigger: skill,

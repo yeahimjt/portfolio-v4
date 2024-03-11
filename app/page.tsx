@@ -17,10 +17,10 @@ export default function Home() {
         <Follow />
         <header className='col-span-4 grid w-full grid-cols-4 gap-[20px] lg:col-start-2'>
           <span className='col-span-4 space-y-4 lg:col-span-2'>
-            <div className=' relative h-[150px] w-[150px] overflow-hidden rounded-full'>
+            <div className='relative h-[150px] w-[150px] overflow-hidden rounded-full'>
               <Waving />
               <Image
-                className='absolute top-0 -z-10'
+                className='spline-backdrop absolute top-0 -z-10'
                 src={'/image/image-background.png'}
                 width={200}
                 height={200}
@@ -28,7 +28,7 @@ export default function Home() {
               />
             </div>
             <section className='space-y-1'>
-              <h1>Jonathan Trevino</h1>
+              <h1 className='test-gradient'>Hi, I&apos;m Jonathan Trevino</h1>
               <p>
                 A <span className='bold'>software engineer</span> with a passion
                 in <span className='bold'>ui</span> and{' '}
@@ -64,19 +64,22 @@ export default function Home() {
           </span>
           <span className='col-span-4 space-y-4 lg:col-span-2'>
             <p>
-              While pursuing my bachelors of computer science, with a minor in
-              cyber security, web development became a rabbit hole I dove into
-              head first.
+              Computer science graduate with a minor in cybersecurity. My
+              interest in web development sparked during college, where I
+              discovered a passion for building functional web applications.
             </p>
             <p>
-              Since then I have had freelance experience developing a web
-              application, and created full stack projects that serve a
-              functional purpose.{' '}
+              Since college, I&apos;ve gained valuable experience through
+              freelance work, focusing on building web applications that
+              prioritize functionality. This hands-on experience has allowed me
+              to refine my skills and deepen my understanding of various
+              technologies.
             </p>
             <p>
-              I frequently dedicate time to enhance my current skills in
-              Next.js, React.js, Tailwind, and TypeScript, aiming to write clean
-              and efficient code.
+              Continuously seeking to enhance my skills, I work on personal
+              projects using a range of technologies. These projects not only
+              serve as a creative outlet but also as a means to stay up-to-date
+              with the latest trends and tools in web development.
             </p>
           </span>
         </header>

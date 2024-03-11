@@ -12,7 +12,7 @@ const ExperienceSample = ({ experience }: ExperienceSampleProps) => {
     <section className='pb-[37px] pt-[19px]'>
       <span className='flex justify-between'>
         <h2 className='experience-title'>{experience.title}</h2>
-        <p className='experience-timeframe'>{experience.timeframe}</p>
+        {/* <p className='experience-timeframe'>{experience.timeframe}</p> */}
       </span>
       <h3 className='experience-company'>{experience.company}</h3>
       <p className='experience-description pt-1'>{experience.description}</p>

@@ -24,10 +24,18 @@ const Skills = ({ title, animate }: Skill) => {
     gsap.fromTo(
       element,
       {
+        rotate: 15,
         scale: 0,
         opacity: 0,
       },
-      { scale: 1, opacity: 1, delay: 1.3, duration: 0.5, stagger: 0.1 }
+      {
+        scale: 1,
+        rotate: 0,
+        opacity: 1,
+        delay: 1.3,
+        duration: 0.5,
+        stagger: 0.1,
+      }
     );
   }
   return (

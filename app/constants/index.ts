@@ -1,7 +1,8 @@
 export const sampler_projects: ProjectList = [
   {
     title: 'Exhibitify',
-    category: 'Full Stack Creative Feedback and Showcase Platform',
+    category:
+      'Platform for users seeking design inspiration for their web portfolios throug visualizing endless real-world portfolios.',
     skills: [
       'Next.js',
       'React.js',
@@ -21,7 +22,8 @@ export const sampler_projects: ProjectList = [
   },
   {
     title: 'Harbor',
-    category: 'Full Stack AI-Enhanced Music Discovery Platform',
+    category:
+      'Allows users to provide direct context to describe their musical taste, to in turn have songs and playlist curated by AI with that context. Recommendations from Harbor are synchronized with Spotify to allow users to listen offline.',
     skills: [
       'Next.js',
       'React.js',
@@ -43,7 +45,8 @@ export const sampler_projects: ProjectList = [
   },
   {
     title: 'Clinkz',
-    category: 'Full Stack Amazon Price Tracker With Subscriptions',
+    category:
+      'Subscription-based service that allows uers to enter Amazon Product URLs to have them actively scraped for beter prices and be notified through email when the price is at its all time low.',
     skills: [
       'Next.js',
       'React.js',

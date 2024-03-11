@@ -5,7 +5,6 @@ import Image from 'next/image';
 import {
   AlertTriangle,
   Check,
-  Clock,
   Globe,
   Linkedin,
   Mail,
@@ -13,6 +12,7 @@ import {
   X,
 } from 'lucide-react';
 import { APIProvider, Map } from '@vis.gl/react-google-maps';
+import Clock from '../clock/clock';
 
 import { EmailTemplate } from '../emailtemplate';
 import emailjs from '@emailjs/browser';
@@ -155,6 +155,7 @@ const CtaSection = () => {
           </button>
         </div>
       </form>
+      <Clock />
     </section>
   );
 };

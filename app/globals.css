@@ -75,3 +75,30 @@ span.bold {
 .cta-cta {
   @apply rotate-[135deg] scale-0 opacity-0;
 }
+
+.test-gradient {
+  background: linear-gradient(to right, #a1caff 20%, #a5ff9e 30%, #cfaeff 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.clock {
+  width: 500px;
+  height: 500px;
+  background-color: #202121;
+  margin: 50px auto;
+  border-radius: 100px;
+}
