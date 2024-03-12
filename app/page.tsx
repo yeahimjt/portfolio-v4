@@ -28,7 +28,7 @@ export default function Home() {
               />
             </div>
             <section className='space-y-1'>
-              <h1 className='test-gradient'>Hi, I&apos;m Jonathan Trevino</h1>
+              <h1 className=''>Hi, I&apos;m Jonathan Trevino</h1>
               <p>
                 A <span className='bold'>software engineer</span> with a passion
                 in <span className='bold'>ui</span> and{' '}
