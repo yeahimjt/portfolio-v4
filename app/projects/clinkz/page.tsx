@@ -38,7 +38,7 @@ const clinkz_data = {
   results:
     'Clinkz is a functional amazon product price tracker that efficiently implements subscription tiers for its users.',
   last: '/projects/harbor',
-  next: '/projects/exhibitify',
+  next: '/projects/linkfolio',
   warning: null,
 };
 

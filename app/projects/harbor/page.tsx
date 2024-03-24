@@ -36,7 +36,7 @@ const harbor_data = {
     'A reasonable challenge I was met with was simply storing the users session including their access token for Spotifys Api to allow their experience browsing music to be seamless. Unfortunately Spotify deemed the project as a hobby not allowing public users to access any of its functionality.',
   results:
     'Harbor became an application I personally use daily. Since the project is not accessible to public users I allowed personal friends to have access to generate their own AI-Enhanced playlists that they regularly use',
-  last: '/projects/exhibitify',
+  last: '/projects/linkfolio',
   next: '/projects/clinkz',
   warning:
     'Due to Spotify classifying my project as a hobby, only manually selected users can access it. If you wish to demo the application please reach out by email.',
