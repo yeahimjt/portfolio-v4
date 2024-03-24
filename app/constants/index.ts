@@ -1,8 +1,8 @@
 export const sampler_projects: ProjectList = [
   {
-    title: 'Exhibitify',
+    title: 'Linkfolio',
     category:
-      'Platform for users seeking design inspiration for their web portfolios throug visualizing endless real-world portfolios.',
+      'Platform for users seeking design inspiration for their web portfolios through visualizing endless real-world portfolios.',
     skills: [
       'Next.js',
       'React.js',
@@ -13,11 +13,11 @@ export const sampler_projects: ProjectList = [
       'Puppeteer',
       'NextAuth',
     ],
-    live_link: 'https://exhibitify.vercel.app/',
-    github_link: 'https://github.com/yeahimjt/exhibitify',
-    redirect_link: '/projects/exhibitify',
+    live_link: 'https://linkfolio-nu.vercel.app/',
+    github_link: 'https://github.com/yeahimjt/linkfolio',
+    redirect_link: '/projects/linkfolio',
     warning: null,
-    image_url: '/image/exhibitify.png',
+    image_url: '/image/linkfolio.png',
     color: '#C0D6E8',
   },
   {
